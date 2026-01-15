@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import {  Link } from "react-router";
 import Navbar from "../components/Navbar";
 import { PROBLEMS } from "../data/problems";
 import { 
@@ -10,6 +10,7 @@ import {
   TerminalIcon 
 } from "lucide-react";
 import { getDifficultyBadgeClass } from "../lib/utils";
+
 
 function ProblemsPage() {
   // 1. STATES: Filtering and Searching
@@ -34,7 +35,6 @@ function ProblemsPage() {
   const easyCount = problemsArray.filter((p) => p.difficulty === "Easy").length;
   const mediumCount = problemsArray.filter((p) => p.difficulty === "Medium").length;
   const hardCount = problemsArray.filter((p) => p.difficulty === "Hard").length;
-
   return (
     <div className="min-h-screen bg-base-200">
       <Navbar />
