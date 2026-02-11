@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend --include=dev && npm run build --prefix frontend",
-    "start":"npm run start --prefix backend"
+    "start": "npm run start --prefix backend"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,11 @@
     "url": "https://github.com/vikassalgude/InterviewX/issues"
   },
   "homepage": "https://github.com/vikassalgude/InterviewX#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@stream-io/video-react-sdk": "^1.24.0",
+    "react-dom": "^18.3.1",
+    "stream-chat": "^9.23.0",
+    "stream-chat-react": "^13.9.0"
+  }
 }
